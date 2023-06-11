@@ -1,0 +1,138 @@
+.treiners {
+
+  &__container {
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__wrapper {
+  }
+
+  &__content {
+    margin-bottom: 75px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+  }
+
+  &__image {
+    border-radius: 20px;
+    max-height: 500px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__post {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;/*  */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--accent-color);
+  }
+
+  &__scroll {
+    width: 260px;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+  }
+
+  &__slider-btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__slider-btn {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_prew {
+      background-image: url('../img/prew.svg');
+    }
+    &_next {
+      background-image: url('../img/next.svg');
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.btn-reset {
+}
+@media (max-width: 991.98px) {
+  .treiners {
+    &__content {
+      margin-bottom: 45px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .treiners {
+    &__title {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .treiners {
+    &__scroll {
+      width: 200px;
+    }
+    &__slider-btn {
+      width: 25px;
+      height: 25px;
+
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {}
+@media (any-hover: hover) {}
